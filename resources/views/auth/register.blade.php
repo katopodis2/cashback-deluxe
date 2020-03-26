@@ -16,7 +16,7 @@
                     <button class = "loginSoc" id="loginTwitter" > <img src={{asset("images/loginTwitter.png")}} class="socImg"><div class="loginTexts">Log in with Facebook</div></button>
                     <button class = "loginSoc" id="loginGoogle" > <img src={{asset("images/loginGoogle.png")}} class="socImg"><div class="loginTexts">Log in with Facebook</div></button>
                     <div>Sign up with your email</div>
-                    <form method="POST" action="{{ route('register') }}">
+                    <form method="POST" action="{{ route('createUser') }}">
                         @csrf
 
                         <input placeholder="Email" id="email" type="email" class="loginSoc {{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>

@@ -131,6 +131,7 @@ body {
     line-height: 38px;
     padding: 32px 61px;
 }
+
 #login {
     color: black;
     border: 1px solid #e8e8e8;
@@ -180,16 +181,20 @@ body {
     min-width: 17.5%;
 }
 .footer .container > div:nth-of-type(2) {
-    margin-right: 10%;
+    margin-right: 5%;
     min-width: 15%;
 }
 .footer .container > div:nth-of-type(3) {
-    margin-right: 10%;
+    margin-right: 5%;
+    min-width: 15%;
+}
+.footer .container > div:nth-of-type(4) {
+    margin-right: 5%;
     overflow: hidden;
     white-space: nowrap;
     min-width: 20%;
 }
-.footer .container > div:nth-of-type(4) > table {
+.footer .container > div:nth-of-type(5) > table {
     margin-top: 10%;
     border: 1px solid #ff7200;
     text-align: center;
@@ -1305,6 +1310,9 @@ header {
 }
 .dieselImg {
     padding: 42px;
+}
+.homeflex {
+    display: flex;
 }
 .zaraImg {
     padding: 69px;

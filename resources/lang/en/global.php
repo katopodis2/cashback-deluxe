@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'watch_video' => "WATCH THE VIDEO",
+    'register_now' => "REGISTER NOW",
+    'how_work' => "How does it work?",
+    'links' => "Links",
+    'home' => "Home",
+    'sign_in' => "Sign In",
+    'logout' => "Logout",
+    'register' => "Register",
+    'aff_network' => "Affiliate Networks",
+    'faq' => "FAQ",
+    'support' => "Support",
+    'terms' => "Terms and conditions",
+    'review' => "Review",
+    'contact' => "Contact Us",
+    'callOrMessage' => "Get in touch with us via mail phone. We are waiting for your call or message",
+    'search_cashBack' => "Search CashBack Stores",
+    'all_stores' => "All stores",
+    'my_cash_back' => "My cash back",
+    'payout_history' => "Payout history",
+    'my_wallet' => "My wallet",
+    'income_from_friend' => "Income from friend",
+    'informations' => "Informations",
+];

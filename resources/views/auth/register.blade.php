@@ -18,6 +18,7 @@
                     <div>Sign up with your email</div>
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
+
                         <input placeholder="Email" id="email" type="email" class="loginSoc {{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
 
                         @if ($errors->has('email'))

@@ -20,7 +20,12 @@
     {{--        </div>--}}
     {{--    </div>--}}
     {{--</div>--}}
+    <div  class="homeflex">
+    @if(
 
+    auth()->user())
+        @include("partials.left-menu")
+    @endif
     <div class="homeRightWidth" id="homeRightWidth">
         <div class="popular_items inner-wrap">
             <div class="bolded_text">Popular stores</div>
@@ -58,66 +63,12 @@
                 <br clear="all">
             </div>
         </div>
-        <div class="buttons_section">
-            <div class="container">
-                <button id="view"><i class="far fa-play-circle"></i> WATCH THE VIDEO</button>
-                <button id="register">REGISTER NOW</button>
-                <br clear="all">
-            </div>
-        </div>
-        <div class="working_principle_items inner-wrap">
-            <div class="bolded_text">How does it work?</div>
-            <div class="list_of_working">
-                <div>
-                    <div class="list-logo">
-                        <img src={{asset('images/search.png')}} alt="">
-                    </div>
-                    <p>Search online store</p>
-                    <p>Click on your favorite online store. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <div class="arrow"></div>
-                </div>
-                <div>
-                    <div class="list-logo">
-                        <img src={{asset('images/cart.png')}} alt="">
-                    </div>
-                    <p>Make your purchase</p>
-                    <p>Click on your favorite online store. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <div class="arrow"></div>
-                </div>
-                <div>
-                    <div class="list-logo">
-                        <img src={{asset('images/credit_card.png')}} alt="">
-                    </div>
-                    <p>Pay by credit card</p>
-                    <p>Click on your favorite online store. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <div class="arrow"></div>
-                </div>
-                <div>
-                    <div class="list-logo">
-                        <img src={{asset('images/money.png')}} alt="">
-                    </div>
-                    <p>Get cashback!</p>
-                    <p>Click on your favorite online store. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-                <br clear="all">
-            </div>
-        </div>
+{{--         start   include button section and how does work section     --}}
+        @if(!auth()->user())
+            @include("partials.includes.how-work")
+        @endif
+        {{-- end   include button section and how does work section     --}}
+
         <div class="store_items inner-wrap">
             <div class="bolded_text">Store Categories</div>
             <div class="list_of_categories">
@@ -290,37 +241,11 @@
 {{--                </div>--}}
             </div>
         </div>
-        <div class="advantages inner-wrap">
-            <div><strong>Save more with </strong>CASHBACK<strong>DELUXE</strong></div>
-            <div class="list_of_advantages">
-                <div>
-                    <div class="list-logo">
-                        <img src={{asset('images/Advantage_icon_1.png')}} alt="">
-                    </div>
-                    <p class="title">Increased Cashback</p>
-                    <p class="desc">Search for products with cashback up to 90% in our special section</p>
-                    <button>Explore Suggestions</button>
-                </div>
-                <div>
-                    <div class="list-logo">
-                        <img src={{asset('images/Advantage_icon_2.png')}} alt="">
-                    </div>
-                    <p class="title">Product Search</p>
-                    <p class="desc">Find the right product among different stores in one service</p>
-                    <button>Explore Suggestions</button>
-                </div>
-                <div>
-                    <div class="list-logo">
-                        <img src={{asset('images/Advantage_icon_3.png')}} alt="">
-                    </div>
-                    <p class="title">Instant payouts</p>
-                    <p class="desc">Cashback from $ 10 in over 15 ways</p>
-                    <button>Explore Suggestions</button>
-                </div>
-                <br clear="all">
-            </div>
-        </div>
-
+        {{-- start   include advantages section, save more with chashbackdeluxe     --}}
+        @if(!auth()->user())
+            @include("partials.includes.advantages")
+        @endif
+        {{-- end   include advantages section, save more with chashbackdeluxe     --}}
         <div class="blog inner-wrap">
             <div class="bolded_text">Blog</div>
             <div class="list_of_blogs">
@@ -366,5 +291,6 @@
                 <br clear="all">
             </div>
         </div>
+    </div>
     </div>
 @endsection

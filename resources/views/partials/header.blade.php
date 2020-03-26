@@ -4,10 +4,12 @@
             <header>
                 <div class="heading">
                     <div class="menu">
-                        <div class="iconLines"><img src={{asset("images/iconMenu.jpg")}} > </div>
+                        @if(auth()->user())
+                            <div class="iconLines" ><div><img src="{{asset("images/iconMenu.jpg")}}" onClick="display()"></div> </div>
+                        @endif
                         <a class="navbar-brand" href="{{ url('/') }}"><div class="img"><img src={{asset("images/logo3.png")}} > </div></a>
                         <div class="search_field">
-                            <input type="text" placeholder="Search CashBack Stores">
+                            <input type="text" placeholder="{{__("global.search_cashBack")}}">
                             <div type="submit">
                                 <i class="fa fa-search"></i>
                             </div>
@@ -49,7 +51,7 @@
                                                 <a class="dropdown-item" href="{{ route('logout') }}"
                                                    onclick="event.preventDefault();
                                                                      document.getElementById('logout-form').submit();">
-                                                    {{ __('Logout') }}
+                                                    {{ __('global.logout') }}
                                                 </a>
 
                                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

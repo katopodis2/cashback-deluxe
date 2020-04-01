@@ -17,6 +17,19 @@ body {
     position: relative;
     max-width: 1920px;
     margin: 0 auto;
+    font-family: "Times New Roman", "Regular";
+    font-weight: 300;
+}
+#usersDiv{
+    margin-top: 25px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid;
+}
+.userAnsUsersDivFlex{
+    display: flex;
 }
 .menu {
     position: relative;
@@ -131,8 +144,7 @@ body {
     line-height: 38px;
     padding: 32px 61px;
 }
-
-#login {
+.menu .buttons #login {
     color: black;
     border: 1px solid #e8e8e8;
     background-color: white;
@@ -141,7 +153,7 @@ body {
     padding: 11px 15px;
     border-radius: 5px;
 }
-#signup {
+.menu .buttons #signup {
     color: white;
     border: 1px solid #ff7200;
     background-color: #ff7200;
@@ -174,7 +186,6 @@ body {
     margin: 20px 0;
     padding: 0 10px;
     line-height: 1.5;
-
 }
 .footer .container > div:nth-of-type(1) {
     margin-right: 10%;
@@ -247,6 +258,7 @@ body {
     padding: 15px 30px;
     position: relative;
     text-align: center;
+    font-family: "Times New Roman", "Regular";
 }
 .payoutHistory {
     color: #000000;
@@ -263,6 +275,8 @@ body {
     font-family: "Rubik Light";
     font-weight: 300;
     display: flex;
+    font-family: "Times New Roman", "Regular";
+    font-weight: 300;
 }
 #payoutHistory {
     padding: 15px;
@@ -272,7 +286,7 @@ body {
     font-family: "Rubik Light";
     font-weight: 300;
     margin-bottom: 96px;
-    /* width: 57%; */
+    font-family: "Times New Roman", "Regular";
 }
 .income {
     width: 330px;
@@ -318,6 +332,8 @@ body {
     background-color: #ffffff;
     margin-right: 30px;
     width: calc(100% - 32px);
+    font-family: "Times New Roman", "Regular";
+    font-weight: 300;
 }
 .payoutDiv2 {
     box-shadow: 0 11px 21px rgba(0, 0, 0, 0.05);
@@ -350,6 +366,7 @@ body {
     color: #a0a0a0;
     font-family: Rubik;
     font-size: 14px;
+    font-family: "Times New Roman", "Regular";
     font-weight: 300;
 }
 .commP {
@@ -381,12 +398,14 @@ body {
     display: flex;
     justify-content: space-between;
     line-height: 25px;
-    font-family: Rubik;
+    font-family: "Times New Roman", "Regular";
     font-weight: 600;
 }
 #informationFlex {
     display: flex;
     justify-content: space-between;
+    font-family: "Times New Roman", "Regular";
+
 }
 .informationCommDiv {
     color: #000000;
@@ -460,6 +479,8 @@ body {
     border: none;
     width: 283;
     height: 44px;
+    font-family: "Times New Roman", "Regular";
+    font-weight: 300;
 }
 .container {
     display: block;
@@ -658,6 +679,7 @@ body {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
+    font-family: "Times New Roman", "Regular";
 }
 .cashBackDiv {
     max-width: 1923px;
@@ -786,7 +808,6 @@ body {
     padding: 0 30px;
     font-style: italic;
 }
-
 .loginTexts {
     padding: 0 55px;
 }
@@ -945,6 +966,7 @@ header {
     text-align: center;
     font-size: 16px;
     font-weight: bold;
+    font-family: "Times New Roman", "Regular";
 }
 .list_of_advantages .desc {
     padding: 15px;
@@ -965,10 +987,14 @@ header {
     border-radius: 5px;
     color: #ff7200;
     text-align: left;
+    font-family: "Times New Roman", "Regular";
+    font-weight: 300;
 }
 .blog {
-    padding: 50px;
+    padding: 50px 0;
     font-size: 16px;
+    font-family: "Times New Roman", "Regular";
+    font-weight: 300;
 }
 .blog .list_of_blogs .date {
     padding: 10px;
@@ -1024,6 +1050,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    font-family: "Times New Roman", "Regular";
+    font-weight: 300;
 }
 .list_of_popular > div {
     background-color: white;
@@ -1081,6 +1109,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    font-family: "Times New Roman", "Regular";
+    font-weight: 300;
 }
 .list_of_categories > div {
     background-color: #fffae7;
@@ -1113,7 +1143,7 @@ header {
     /* width: 90%; */
     max-height: 100%;
 }
-.listLogoImg{
+.listLogoImg {
     width: 90%;
 }
 .list_of_top_ten {
@@ -1245,8 +1275,8 @@ header {
     position: relative;
     text-align: center;
     font-size: 16px;
-    font-family: Rubik;
     font-weight: 600;
+    font-family: "Times New Roman", "Regular";
 }
 .allStoresDivS {
     display: flex;
@@ -1421,7 +1451,6 @@ header {
 }
 .marginItems {
     margin: 15px;
-
 }
 .soc {
     display: flex;
@@ -1439,17 +1468,15 @@ header {
     flex: 1;
     padding: 0 0 0 25px;
 }
-#credit{
+#credit {
     margin-top: 40px;
 }
-#axjik{
+#axjik {
     margin-top: 18px;
-
 }
-#cashback{
+#cashback {
     font-size: 60px;
     font-weight: 500;
-
 }
 
 #serviceP4 {
@@ -1461,7 +1488,7 @@ header {
     background-repeat: no-repeat;
     border-radius: 50%;
     height: 200px;
-    width: calc(100% /3);
+    width: calc(100% / 3);
     text-align: center;
 }
 .ourService > div {
@@ -1474,24 +1501,21 @@ header {
     margin-bottom: 40px;
 }
 
-
 #about {
     color: #000000;
     font-family: "Rubik", sans-serif;
     font-weight: 700;
     font-size: 60px;
-
 }
 
 #userName {
     color: #000000;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     font-size: 16px;
     font-weight: 600;
 }
 
 .amsativ {
-
     color: #7e7e7e;
     font-family: "Rubik - Light Italic";
     font-size: 16px;
@@ -1504,20 +1528,20 @@ header {
     width: 551px;
     margin-left: 61px;
     color: #000000;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     font-size: 30px;
     font-weight: 700;
 }
-.FaqMainTitle{
+.FaqMainTitle {
     color: #000000;
     font-family: Rubik;
     font-size: 30px;
     font-weight: 700;
 }
-.faqHr{
+.faqHr {
     border-color: #ff7200;
 }
-.FaqMainDiv{
+.FaqMainDiv {
     max-width: 1490px;
     min-height: 400px;
     box-shadow: 0 11px 21px rgba(0, 0, 0, 0.05);
@@ -1525,7 +1549,7 @@ header {
     background-color: #ffffff;
     margin-bottom: 30px;
 }
-.FaqOthersDiv{
+.FaqOthersDiv {
     max-width: 1490px;
     min-height: 50px;
     box-shadow: 0 11px 21px rgba(0, 0, 0, 0.05);
@@ -1534,28 +1558,26 @@ header {
     margin-bottom: 30px;
     padding: 11px 0 0 25px;
     position: relative;
-
 }
-.FaqTitle{
+.FaqTitle {
     color: #000000;
     font-family: Rubik;
     font-size: 24px;
     font-weight: 700;
     padding: 0 15px 0 30px;
-
 }
-.FaqInnerMainDiv{
+.FaqInnerMainDiv {
     color: #000000;
     font-family: Rubik;
     font-size: 14px;
     font-weight: 700;
 }
-.faqImg{
+.faqImg {
     position: absolute;
     right: 15px;
     top: 17px;
 }
-.faqImgLogo{
+.faqImgLogo {
     background-image: url(./images//faqLogo.png);
     max-width: 1900px;
     height: 700px;
@@ -1563,9 +1585,8 @@ header {
     position: relative;
     background-size: cover;
     padding: 50px;
-
 }
-.FaqSelects{
+.FaqSelects {
     width: 415px;
     height: 40px;
     border-radius: 7px;
@@ -1575,7 +1596,7 @@ header {
     margin-bottom: 15px;
     outline: none;
 }
-.FaqTextarea{
+.FaqTextarea {
     width: 415px;
     height: 115px;
     border-radius: 7px;
@@ -1585,7 +1606,7 @@ header {
     margin-right: 15px;
     outline: none;
 }
-.FaqPS{
+.FaqPS {
     padding: 0 30px 0 65px;
     color: #000000;
     font-family: Rubik;
@@ -1593,11 +1614,11 @@ header {
     font-weight: 500;
     line-height: 27px;
 }
-#FaqTitle{
+#FaqTitle {
     padding: 0;
     margin-bottom: 35px;
 }
-.faqOrage{
+.faqOrage {
     background-color: #ff7200;
     color: #fff;
     padding: 10px;
@@ -1610,10 +1631,10 @@ header {
     cursor: pointer;
     text-decoration: none;
 }
-.faqFlex{
+.faqFlex {
     display: flex;
 }
-.faqPadding{
+.faqPadding {
     width: calc(100% - 344px);
     padding: 25px;
 }
@@ -1621,10 +1642,450 @@ header {
     background-color: transparent;
     border: none;
 }
-.loginCentre{
+.loginCentre {
+    display: flex;
+}
+.reviewsFlex {
+    display: flex;
+}
+.categoriesFlex {
+    display: flex;
+}
+.categoriesOrange {
+    max-width: 1155px;
+    min-height: 30px;
+    background-color: #fee685;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 0 30px;
+}
+.categoriesDiv {
+    max-width: 1155px;
+    min-height: 240px;
+    background-color: #ffffff;
+    padding: 30px 30px;
+    line-height: 30px;
+    font-family: "Times New Roman", "Regular";
+    font-weight: 300;
+}
+.categoriesPercent {
+    padding: 0 30px 0 0;
+    font-weight: 700;
+}
+.reviewsUser {
+    font-weight: 700;
+    padding: 0 30px 0 0;
+}
+.reviewsDiv {
+    max-width: 1155px;
+    min-height: 420px;
+    background-color: #ffffff;
+    padding: 30px 30px;
+    line-height: 30px;
+    font-family: "Times New Roman", "Regular";
+    font-weight: 300;
+}
+.reviewsBorder {
+    border: 1px solid #e8e8e8;
+    padding: 20px;
+}
+.couponFlex {
+    display: flex;
+    padding: 30px;
+    font-family: "Times New Roman", "Regular";
+    font-weight: 300;
+}
+.couponText {
+    width: 180px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px 0 30px;
+}
+.adidasDiv {
+    display: flex;
+    max-width: 300px;
+    min-height: 300px;
+    background-color: #ffffff;
+    padding: 30px 30px;
+    line-height: 30px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.adidasFlex{
+    display: flex;
+}
+
+.categoriesPadding{
+    box-shadow: 0 11px 21px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+}
+#adidasMargin{
+    margin-bottom: 20px;
+}
+.adidasText{
+    width: 190px;
+    font-family: "Times New Roman", "Regular";
+    font-weight: 300;
+}
+
+.adidasTitle{
+    color: #000000;
+    font-family: Rubik;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 30px 0;
+
+}
+.privacyPolicyOrange{
+    max-width: 1480px;
+    min-height: 30px;
+    background-color: #fff6d3;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-family: "Times New Roman", "Regular";
+    padding: 0 20px;
+
+}
+.termsAndDefinationDiv{
+    min-height: 450px;
+    max-width: 1480px;
+    box-shadow: 0 11px 21px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "Times New Roman", "Regular";
+    padding: 20px;
+}
+#generalProvisionsDiv{
+    min-height: 120px;
+}
+#personalDataDiv{
+    min-height: 285px;
+}
+#conditionsDiv{
+    min-height: 360px;
+}
+#collectingDiv{
+    min-height: 950px;
+}
+#changeDiv{
+    min-height: 110px;
+}
+#conditentality{
+    min-height:155px
+}
+#contact{
+    min-height:140px
+}
+.mainPrivacyPolicy{
+    padding: 25px 85px;
+}
+.mySettingDiv{
+    max-width: 610px;
+    min-height: 820px;
+    box-shadow: 0 11px 21px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "Times New Roman", "Regular";
+    padding: 1px 80px 0 80px;
+    text-align: center;
+
+}
+.socialNetwork{
+    font-size: 24px;
+}
+.socialNetworkMainLines{
+    padding: 18px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.socialNetworkLine{
+    display: flex;
+}
+.socialNetworkImg{
+    height: 20px;
+    padding: 0 35px 0 0;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 65px;
+    height: 26px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #74b65f;
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(37px);
+}
+
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+.profileTitle{
+    color: #000000;
+    font-family: Rubik;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 30px 0;
+    justify-content: center;
+    display: flex;
+    font-family: "Times New Roman", "Regular";
+
+}
+.inputNamesFlex{
+    display: flex;
+}
+.errorColor{
+    color: #ff7200;
+
+}
+.mySettingInputStyle{
+    width: 100%;
+    height: 40px;
+    border-radius: 7px;
+    border: 2px solid #e8e8e8;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+}
+.delteProfileDiv{
+    height: 40px;
+    width: 160px;
+    background-color: #d0d0d0;
+    color: #444444;
+    border-radius: 6px;
+    align-items: center;
     display: flex;
     justify-content: center;
+    text-transform: uppercase;
 }
+.saveProfileDiv{
+    height: 40px;
+    width: 140px;
+    background-color: #ff7200;
+    border-radius: 6px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.mysettingDownFlex{
+    display: flex;
+    justify-content: space-between;
+    padding: 85px 0 40px 0;
+
+}
+.marginMySettingDiv{
+    margin-bottom: 30px;
+}
+.changePasswordDiv{
+    position: relative;
+    max-width: 600px;
+    height: 400px;
+    box-shadow: 0 11px 21px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 35px 85px;
+    color: #0e0e0e;
+    font-size: 14px;
+    line-height: 23px;
+    background-color: #ffffff;
+}
+.changePasswordDownFlex{
+    display: flex;
+    justify-content: space-between;
+}
+.cancelDiv{
+    height: 40px;
+    width: 140px;
+    background-color: #ff7200;
+    border-radius: 6px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: "Times New Roman", Regular;
+}
+#cancelDiv{
+    background-color: #d0d0d0;
+    color: #444444;
+}
+.changePasswordDivTitle{
+    font-size: 24px;
+    justify-content: center;
+    display: flex;
+    color: #000000;
+    font-family: Rubik;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.dropbtn {
+    border: none;
+    cursor: pointer;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    border-top: 1px solid rgb(255, 114, 0);
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 180px;
+    overflow: auto;
+    box-shadow: 0 11px 21px rgba(0, 0, 0, 0.05);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+.adidasNewFlex{
+    display: flex;
+}
+.myFeedback{
+    padding: 25px;
+}
+.myFeedbackFlex{
+    position: relative;
+    box-shadow: 0 11px 21px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+.myFeedbackFlexPadding{
+    padding: 20px 310px 0 20px;
+
+}
+.myFeedbackBold{
+    font-family: Rubik;
+    font-weight: 600;
+
+}
+.imgsFlex{
+    padding: 20px;
+    border-bottom: 1px solid #fee685;
+}
+#myFeedbackBold{
+    margin-top: 20px;
+    padding: 0 100px 0 0;
+
+}
+.starPadding{
+    margin: 0 20px 0 0;
+}
+
+.myFeedbackMarginButtom{
+    margin-bottom: 17px;
+}
+.myFeedbackMarginTop{
+    margin-top: 17px;
+    color: #d34646;
+}
+.wouldYouFlex{
+    display: flex;
+    border-bottom: 1px solid #fee685;
+    align-items: baseline;
+}
+.yesOrNoMargin{
+    margin-bottom: 20px;
+}
+.myFeedbackYesOrNo{
+    width: 100px;
+    height: 40px;
+    background-color: ffffff;
+    outline: none;
+    border: 1px solid;
+    border-color: #ff7200;
+    color: #ff7200;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-family: Rubik;
+    font-weight: 600;
+}
+#myFeedbackYesOrNo{
+    color: #b9b9b9;
+    border-color: #e8e8e8;
+}
+.myFeedBackInputs{
+    display: flex;
+    flex-wrap: wrap;
+}
+.advAndCommInputs{
+    width: 505px;
+    height: 175px;
+}
+.disadvinput{
+    width: 505px;
+    height: 125px;
+}
+
 @media screen and (max-width: 1054px) {
     .menu .search_field {
         max-width: 40px;
@@ -1669,6 +2130,7 @@ header {
     .list_of_working,
     .list_of_popular {
         justify-content: center;
+
     }
     .list_of_working > div,
     .list_of_popular > div {
@@ -1743,7 +2205,6 @@ header {
     }
     #footer_email {
         font-size: 6px;
-
     }
 }
 @media screen and (max-width: 1060px) {
@@ -1755,6 +2216,13 @@ header {
     }
 }
 @media screen and (min-width: 769px) and (max-width: 965px) {
+    .changePasswordDiv{
+        padding: 30px 35px;
+    }
+    .mySettingDiv{
+        padding: 1px 30px 0 30px;
+
+    }
     .selects {
         width: 160px;
     }
@@ -1769,6 +2237,7 @@ header {
     }
 }
 @media screen and (max-width: 992px) and (min-width: 600px) {
+
     .leaves {
         padding: 12px 18px;
     }
@@ -1798,6 +2267,7 @@ header {
     }
 }
 @media screen and (max-width: 851px) {
+
     .payoutDivs {
         justify-content: center;
     }
@@ -1806,7 +2276,6 @@ header {
     .payoutDivs {
         display: grid;
         justify-content: center;
-
     }
     #payoutHistory {
         margin-bottom: 30px;
@@ -1817,6 +2286,15 @@ header {
     }
 }
 @media screen and (max-width: 768px) {
+    .changePasswordDiv{
+        padding: 30px 35px;
+    }
+    .mySettingDiv{
+        padding: 1px 30px 0 30px;
+    }
+    .mainPadding{
+        padding: 0;
+    }
     .menu .buttons .logo {
         padding: 10px 10px;
     }
@@ -1956,37 +2434,42 @@ header {
         padding: 15px 45px;
     }
     .serviceDivs {
-        width: 50%!important;
+        width: 50% !important;
     }
-    .faqPadding{
+    .faqPadding {
         width: 100%;
+        justify-content: center;
+    }
+    .mainPrivacyPolicy{
+        padding: 0;
+    }
+    .adidasTitle {
+        padding: 0 20px;
     }
 }
 @media screen and (max-width: 640px) {
     .payoutHistory2 {
         display: grid;
         justify-content: center;
-
     }
 }
 @media screen and (max-width: 630px) {
-    .card{
+    .card {
         padding: 25px;
         display: block;
     }
-    .soc{
+    .soc {
         justify-content: center;
     }
     .starRow {
         padding: 0 25px;
     }
-    .revuewUserAndText{
+    .revuewUserAndText {
         padding: 0;
         border-right: none;
     }
-    .amsativ{
+    .amsativ {
         margin-bottom: 20px;
-
     }
 }
 @media screen and (max-width: 452px) {
@@ -2162,6 +2645,3 @@ header {
         width: 100%;
     }
 }
-
-
-

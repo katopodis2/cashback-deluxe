@@ -5,10 +5,10 @@
  * Date: 24.03.2020
  * Time: 15:04
  */
-namespace App\services;
+namespace App\Services;
 use  Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
-use App\User;
+use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 
 class AuthService

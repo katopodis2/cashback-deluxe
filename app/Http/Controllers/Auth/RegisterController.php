@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\services\AuthService;
+use App\Services\AuthService;
 class RegisterController extends Controller
 {
     /*
@@ -72,7 +72,7 @@ class RegisterController extends Controller
      * Create a new user instance after a valid registration.
      *
      * @param  array $data
-     * @return \App\User
+     * @return \App\Models\User
      */
 //    protected function createUser(Request $request,AuthService $authRepository)
 //    {

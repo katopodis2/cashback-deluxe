@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\services\AuthService;
+use App\Services\AuthService;
 use Illuminate\Http\Request;
 
 

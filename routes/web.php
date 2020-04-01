@@ -22,3 +22,10 @@ Route::get('/login', 'AuthController@login')->name('login');
 Route::post('/login', 'AuthController@signIn')->name('signIn');
 Route::get('/test', 'AuthController@test')->name('test');
 Route::post('/logout', 'AuthController@logout')->name('logout');
+
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('/my-wallet', 'MyCashBackController@myWallet')->name('myCashBack.myWallet');
+    Route::get('/my-cash-back', 'MyCashBackController@index')->name('myCashBack.index');
+    Route::get('/my-back-claim', 'MyCashBackController@myClaim')->name('myCashBack.myClaim');
+    Route::get('/payout-history', 'MyCashBackController@payoutHistory')->name('myCashBack.payoutHistory');
+});

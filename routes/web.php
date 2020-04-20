@@ -20,5 +20,8 @@ Route::get('/register', 'AuthController@register')->name('register');
 Route::post('/create-user', 'AuthController@createUser')->name('createUser');
 Route::get('/login', 'AuthController@login')->name('login');
 Route::post('/login', 'AuthController@signIn')->name('signIn');
-Route::get('/test', 'AuthController@test')->name('test');
+Route::get('/test', 'Auth\RegisterController@test')->name('test');
 Route::post('/logout', 'AuthController@logout')->name('logout');
+Route::get('/store/{id}', 'StoreController@store')->name('store');
+
+Route::post('/create_review', 'ReviewController@createReview')->name('createReview');

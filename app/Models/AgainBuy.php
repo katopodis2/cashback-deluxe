@@ -1,0 +1,12 @@
+<?php
+
+namespace App\models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class AgainBuy extends Model
+{
+    protected $fillable = [
+        'user_id','store_id', 'yes','no'
+    ];
+}

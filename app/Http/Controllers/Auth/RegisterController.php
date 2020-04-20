@@ -4,8 +4,9 @@ namespace App\Http\Controllers\Auth;
 
 
 use App\Http\Controllers\Controller;
+use App\Models\Role;
 use Illuminate\Http\Request;
-use App\Services\AuthService;
+use App\services\AuthService;
 class RegisterController extends Controller
 {
     /*
@@ -72,7 +73,7 @@ class RegisterController extends Controller
      * Create a new user instance after a valid registration.
      *
      * @param  array $data
-     * @return \App\Models\User
+     * @return \App\User
      */
 //    protected function createUser(Request $request,AuthService $authRepository)
 //    {
@@ -82,4 +83,14 @@ class RegisterController extends Controller
 //
 //
 //    }
+
+
+public function test(){
+
+
+
+    $role = Role::get();
+    dd($role);
+
+}
 }

@@ -224,6 +224,13 @@ body {
 .homePayoutHistory {
     display: flex;
 }
+.homeBlock{
+    display: block;
+
+}
+.homeNone{
+    display: none;
+}
 .bringFriend {
     width: 286px;
     height: 19px;
@@ -803,7 +810,7 @@ body {
     margin-bottom: 40px;
     cursor: pointer;
 }
-#emailPassword, #email, #name, #surname, #password-confirm{
+ #emailPassword, #email, #name, #surname, #password-confirm{
     border-color: #ff7200;
     padding: 0 30px;
     font-style: italic;
@@ -1360,9 +1367,7 @@ header {
     padding: 10px;
     width: calc(100% - 344px);
 }
-.homeBringfriend {
-    display: flex;
-}
+
 .friendDivs {
     max-width: 1193px;
     box-shadow: 0 11px 21px rgba(0, 0, 0, 0.05);
@@ -1383,6 +1388,8 @@ header {
 }
 .homeBringFriend {
     display: flex;
+    justify-content: center;
+
 }
 #home {
     width: 344px;
@@ -1549,22 +1556,34 @@ header {
     background-color: #ffffff;
     margin-bottom: 30px;
 }
+
 .FaqOthersDiv {
     max-width: 1490px;
     min-height: 50px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     box-shadow: 0 11px 21px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
     background-color: #ffffff;
     margin-bottom: 30px;
-    padding: 11px 0 0 25px;
     position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px
+
+
 }
 .FaqTitle {
     color: #000000;
     font-family: Rubik;
     font-size: 24px;
     font-weight: 700;
-    padding: 0 15px 0 30px;
+    margin: 10px 0 0 25px;
+
 }
 .FaqInnerMainDiv {
     color: #000000;
@@ -1572,13 +1591,9 @@ header {
     font-size: 14px;
     font-weight: 700;
 }
-.faqImg {
-    position: absolute;
-    right: 15px;
-    top: 17px;
-}
+
 .faqImgLogo {
-    background-image: url(./images//faqLogo.png);
+    background-image: url(../images/faq/faqLogo.png);
     max-width: 1900px;
     height: 700px;
     background-repeat: no-repeat;
@@ -1587,10 +1602,10 @@ header {
     padding: 50px;
 }
 .FaqSelects {
-    width: 415px;
+    width: 100%;
     height: 40px;
     border-radius: 7px;
-    border: 1px solid #6e6e6e;
+    border: 2px solid #e8e8e8;
     padding: 10px;
     margin-right: 15px;
     margin-bottom: 15px;
@@ -1607,7 +1622,7 @@ header {
     outline: none;
 }
 .FaqPS {
-    padding: 0 30px 0 65px;
+    padding: 0 30px 60px 65px;
     color: #000000;
     font-family: Rubik;
     font-size: 14px;
@@ -1617,6 +1632,8 @@ header {
 #FaqTitle {
     padding: 0;
     margin-bottom: 35px;
+    margin: 0;
+
 }
 .faqOrage {
     background-color: #ff7200;
@@ -1633,10 +1650,19 @@ header {
 }
 .faqFlex {
     display: flex;
+    justify-content: center;
+
 }
 .faqPadding {
     width: calc(100% - 344px);
     padding: 25px;
+    display: grid;
+    justify-content: center;
+}
+.faqPaddingPage {
+    width: calc(100% - 344px);
+    padding: 25px;
+    justify-content: center;
 }
 #modal {
     background-color: transparent;
@@ -1677,6 +1703,7 @@ header {
 .reviewsUser {
     font-weight: 700;
     padding: 0 30px 0 0;
+    color: #ff7200;
 }
 .reviewsDiv {
     max-width: 1155px;
@@ -1717,11 +1744,29 @@ header {
 
 .adidasFlex{
     display: flex;
+    /* flex-wrap: wrap; */
+}
+.categoriesPaddingFlex{
+    display: flex;
+    align-items: center;
 }
 
 .categoriesPadding{
     box-shadow: 0 11px 21px rgba(0, 0, 0, 0.05);
     background-color: #ffffff;
+    font-family: "Times New Roman", "Regular";
+    font-weight: 300;
+    padding: 30px 30px 100px 30px;
+    /* margin-top: 20px; */
+    border-radius: 5px;
+    line-height: 30px;
+
+}
+.categoriesPaddingBold{
+    font-weight: 700;
+}
+.infoMarginRight{
+    margin-right: 20px;
 }
 #adidasMargin{
     margin-bottom: 20px;
@@ -1783,7 +1828,12 @@ header {
     min-height:140px
 }
 .mainPrivacyPolicy{
-    padding: 25px 85px;
+    width: calc(100% - 344px);
+    padding: 25px;
+}
+.privacyPolicyFlex{
+    display: flex;
+    justify-content: center;
 }
 .mySettingDiv{
     max-width: 610px;
@@ -1887,6 +1937,8 @@ input:checked + .slider:before {
 
 }
 .mySettingInputStyle{
+    max-width: 100%;
+    max-height: 150px;
     width: 100%;
     height: 40px;
     border-radius: 7px;
@@ -1905,6 +1957,9 @@ input:checked + .slider:before {
     display: flex;
     justify-content: center;
     text-transform: uppercase;
+    outline: none;
+    border: 1px solid #d0d0d0;
+    cursor: pointer;
 }
 .saveProfileDiv{
     height: 40px;
@@ -1916,9 +1971,12 @@ input:checked + .slider:before {
     justify-content: center;
     text-transform: uppercase;
     color: #ffffff;
+    outline: none;
+    border: 1px solid #ff7200;;
+    cursor: pointer;
 }
 .mysettingDownFlex{
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
     padding: 85px 0 40px 0;
 
@@ -1929,7 +1987,7 @@ input:checked + .slider:before {
 .changePasswordDiv{
     position: relative;
     max-width: 600px;
-    height: 400px;
+    min-height: 400px;
     box-shadow: 0 11px 21px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
     padding: 35px 85px;
@@ -1953,10 +2011,16 @@ input:checked + .slider:before {
     text-transform: uppercase;
     color: #ffffff;
     font-family: "Times New Roman", Regular;
+    outline: none;
+    border: 1px solid #ff7200;
+    cursor: pointer;
 }
 #cancelDiv{
     background-color: #d0d0d0;
     color: #444444;
+    outline: none;
+    border: 1px solid #d0d0d0;
+    cursor: pointer;
 }
 .changePasswordDivTitle{
     font-size: 24px;
@@ -2010,21 +2074,30 @@ input:checked + .slider:before {
 }
 .myFeedback{
     padding: 25px;
-}
-.myFeedbackFlex{
-    position: relative;
-    box-shadow: 0 11px 21px rgba(0, 0, 0, 0.05);
-    border-radius: 10px;
-    background-color: #ffffff;
-}
-.myFeedbackFlexPadding{
-    padding: 20px 310px 0 20px;
+    width: calc(100% - 344px);
 
 }
+
+.myFeedbackFlex{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    /* box-shadow: 0 11px 21px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    background-color: #ffffff;
+    max-width: 1200px;
+    margin-right: 15px;  */
+}
+
 .myFeedbackBold{
+    margin-top: 20px;
     font-family: Rubik;
     font-weight: 600;
 
+}
+.myFeedBackInputs-Flex{
+    display: flex;
+    flex-wrap: wrap;
 }
 .imgsFlex{
     padding: 20px;
@@ -2041,9 +2114,10 @@ input:checked + .slider:before {
 
 .myFeedbackMarginButtom{
     margin-bottom: 17px;
+    color: #3c3c3c;
 }
 .myFeedbackMarginTop{
-    margin-top: 17px;
+    margin-top: 20px;
     color: #d34646;
 }
 .wouldYouFlex{
@@ -2074,19 +2148,589 @@ input:checked + .slider:before {
     border-color: #e8e8e8;
 }
 .myFeedBackInputs{
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
+    padding: 20px 50px 50px 50px;
+
 }
 .advAndCommInputs{
+    /* width: 100%; */
     width: 505px;
-    height: 175px;
+    min-height: 175px;
+    border-color: #d0d0d0;
+    outline: none;
+    border-top: 2px solid #d0d0d0;
+    border-left: 2px solid #d0d0d0;
+    border-radius: 5px;
+    margin-right: 30px;
+    padding: 10px;
 }
 .disadvinput{
+    /* width: 100%; */
     width: 505px;
-    height: 125px;
+    min-height: 175px;
+    border-color: #d0d0d0;
+    outline: none;
+    border-top: 2px solid #d0d0d0;
+    border-left: 2px solid #d0d0d0;
+    border-radius: 5px;
+    margin-right: 30px;
+    padding: 10px;
+
+}
+.orderNumber{
+    /* width: 100%; */
+    width: 505px;
+    min-height: 50px;
+    border-color: #d0d0d0;
+    outline: none;
+    border-top: 2px solid #d0d0d0;
+    border-left: 2px solid #d0d0d0;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+.inputTitle{
+    color: #3c3c3c;
+    margin-bottom: 10px;
+    font-family: Rubik;
+    font-weight: 600;
 }
 
+.myFeedBackButtonsFlexEnd{
+    /* display: flex;
+    justify-content: flex-end; */
+    margin-top: 30px;
+    text-align: end;
+
+}
+
+.sendFeedback{
+    width: 200px;
+    height: 40px;
+}
+.myFeedBacksendFeedback{
+    width: 200px;
+    height: 40px;
+    margin: 0 20px 10px 0;
+    cursor: pointer;
+    background-color: #ff7200;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #ffffff;
+    font-family: "Times New Roman", Regular;
+    text-transform: uppercase;
+    outline: none;
+    border: 1px solid;
+    font-family: Rubik;
+    font-weight: 600;
+
+}
+.myFeedBackCancel{
+    width: 110px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #949494;
+    font-family: "Times New Roman", Regular;
+    text-transform: uppercase;
+    outline: none;
+    border: 2px solid #f0f0f0;
+    font-family: Rubik;
+    font-weight: 600;
+}
+#disatvMarginTop{
+    margin-top: 10px;
+}
+.myFeedBackMainTitle{
+    color: #000000;
+    font-family: Rubik;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 30px 0;
+}
+.myFeedbackInnerFlex{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.myFeedBackStores{
+    width: 285px;
+    min-height: 285px;
+    padding: 55px 30px;
+    line-height: 30px;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 11px 21px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin: 15px 0 15px 0;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: "Times New Roman", "Regular";
+
+}
+.myFeedbackImgS{
+    margin-bottom: 30px;
+}
+.myFeedbackImgSText{
+    width: 92%;
+}
+.myFeedBackStoresTitle {
+    font-size: 17px;
+    font-weight: 600;
+    font-family: "Times New Roman", "Regular";
+}
+
+.adidasReviews{
+    min-height: 60px;
+    box-shadow: 0 11px 21px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    background-color: #ffffff;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Times New Roman", "Regular";
+    font-weight: 700;
+    align-items: center;
+    padding: 0 20px;
+}
+.buttonSFeedback{
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+}
+#buttonSFeedbackGrey{
+    background-color: #e8e8e8;
+    color: #747474;
+    border: 1px solid #e8e8e8;
+
+}
+#buttonSFeedbackYellow{
+    background-color: #fee685;
+    color: #000000;
+    border: 1px solid #fee685;
+}
+#buttonSFeedbackOrange{
+    background-color: #e18218;
+    color: #e8e8e8;
+    border: 1px solid #e18218;
+}
+.totalRatingTitle{
+    color: #8c8c8c;
+    font-family: "Times New Roman", "Regular";
+    font-weight: 300;
+}
+.totalRating{
+    color: #000000;
+    font-family: Rubik;
+    font-weight: 700;
+    margin-right: 20px;
+}
+.totalRatingFlex{
+    display: flex;
+    align-items: center;
+}
+.datasFlex{
+    display: flex;
+    justify-content: space-between;
+}
+.likeDislikeFlex{
+    display: flex;
+    align-items: center;
+}
+#reviewsBorder{
+    max-width: 300px;
+    font-family: "Times New Roman", "Regular";
+    font-weight: 300;
+}
+.learnMore{
+    font-size: 12px;
+    color: #ff7200;
+}
+.adidasDivButton{
+    width: 230px;
+    height: 40px;
+    background-color: #e18218;
+    color: #e8e8e8;
+    outline: none;
+    border: 1px solid #e18218;
+    border-radius: 5px;
+}
+.shareMyFeedback{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+.adidasDivUserName{
+    color: #000000;
+    font-family: Rubik;
+    font-weight: 700;
+}
+.adidasDivUserNameFlex{
+    justify-content: space-between;
+    display: flex;
+}
+.mainPaddingMyFeedback{
+    padding: 20px;
+    width: calc(100% - 344px);
+}
+
+.adidasFlexMarginRight{
+    max-width: 300px;
+}
+.adidasReviewsMarginRightAndstoresMyFeedbackMediaFlex{
+    display: flex;
+}
+
+.adidasReviewsMarginRight{
+    /* margin-right: 20px; */
+    margin: 0 20px;
+}
+
+
+.adidasReviewsMarginRight{
+    margin-right: 20px;
+}
+.percentReviews{
+    padding: 30px;
+    line-height: 21px;
+    font-family: "Times New Roman", "Regular";
+    font-weight: 500;
+}
+.percentReviewsBold{
+    font-weight: 600;
+
+}
+.likeDislikeMediaFlex{
+    display: flex;
+    align-items: center;
+}
+.totalRatingAndLeaveReviewFlex{
+    display: flex;
+}
+.totalRatingAdidasDown{
+    color: #000000;
+    font-weight: 700;
+    font-size: 30px;
+}
+.totalRatingMiniTitle{
+    margin-right: 20px;
+    border-right: 1px solid #1c1c1c;
+    padding: 0 20px 0 0;
+    color: #1c1c1c;
+}
+.leaveReviewMiniTitle{
+    color: #e18218;
+}
+.green1{
+    background-color: #99c45a;
+    width: 67%;
+    height: 5px;
+}
+.gray1{
+    background-color: #e8e8e8;
+    width: 55px;
+    height: 2px;
+}
+.green2{
+    background-color: #99c45a;
+    width: 67%;
+
+    height: 5px;
+}
+.gray2{
+    background-color: #e8e8e8;
+    width: 55px;
+    height: 2px;
+}
+.green3{
+    background-color: #99c45a;
+    width:56%;
+    height: 5px;
+}
+.gray3{
+    background-color: #e8e8e8;
+    width: 135px;
+    height: 2px;
+}
+.greenAndGrayDivsMyFeedback{
+    display: flex;
+    align-items: center;
+}
+.greenAndGrayDivsMyFeedback2{
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+}
+.totalDivsAndColorsDivsFlex{
+    /* display: flex; */
+    align-items: center;
+}
+.productMyFeedback{
+    /* max-width: 206px; */
+}
+.totalRatingAdidasDownFlex{
+    padding: 30px;
+}
+.totalRatingTitlePaddingResponsive{
+    padding: 30px;
+}
+.percentReviewsBoldMarginBottom{
+    margin-bottom: 10px;
+}
+
+/* .rating-box{
+    display: flex;
+    flex-direction: column;
+}
+.rating-box h1 {
+    margin:  0 0 30px;
+    font-size: 40px;
+}
+.rating-box .ratings .fa{
+    font-size: 30px;
+    float: left;
+    cursor: pointer;
+    color: #4e4e4e;
+    margin: 0 20px 0 0;
+}
+.rating-box input{
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 6px 12px;
+    border: none;
+}
+#rating-value {
+    display: none;
+} */
+
+
+.rate {
+    position: relative;
+    /* justify-content: flex-end; */
+    display: inline-block;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+.star-icon{
+    content: "\2606";
+    color:blue;
+
+}
+.star-icon:hover,
+.star-icon:active,
+.star-icon:visited,
+.star-icon:focus {
+    color: yellow;
+}
+
+.radioYesOrNo[type=radio] {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+}
+
+.radioYesOrNoLabel {
+    display: inline-block;
+    cursor: pointer;
+    color: #b9b9b9;
+    width: 100px;
+    height: 40px;
+    border: 1px solid #e8e8e8;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-family: Rubik;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 0;
+}
+.radioYesOrNo[type=radio]:checked + .radioYesOrNoLabel{
+    color: #ff7200;
+    border: 1px solid;
+}
+
+::placeholder{
+    color: #a0a0a0;
+
+}
+
+@media screen and (max-width: 1600px){
+    .orderNumber{
+        width: 100%;
+    }
+    .disadvinput{
+        width: 100%;
+    }
+
+    .adidasFlexMarginRight{
+        max-width: 100%;
+        margin: 0;
+    }
+    .adidasReviews{
+        justify-content: space-evenly;
+    }
+    .adidasReviewsMarginRight{
+        margin: 0;
+    }
+    .mainPaddingMyFeedback{
+        padding: 20px;
+    }
+    .adidasReviews{
+        margin-top: 20px;
+    }
+    .myFeedbackFlexPadding{
+        padding: 0 30px;
+    }
+    .myFeedBackInputs {
+        justify-content: center;
+    }
+    .myFeedBackMainTitle{
+        padding: 0 30px;
+    }
+    #myFeedbackBold{
+        padding: 0;
+        margin-bottom: 10px;
+
+    }
+    .wouldYouFlex{
+        justify-content: space-between;
+    }
+    .myFeedbackMain{
+        padding: 0 30px;
+    }
+    .advAndCommInputs{
+        width: 100%;
+    }
+    .myFeedBackInputs-Flex{
+        display: block;
+    }
+    .adidasFlex{
+        display: block;
+    }
+    #reviewsBorder{
+        max-width: 100%;
+    }
+    #adidasMargin{
+        margin: 20px;
+    }
+}
+@media screen and (max-width: 1330px){
+    .myFeedBackButtonsFlexEnd{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center
+    }
+    .myFeedbackFlexPadding{
+        flex-wrap: wrap;
+    }
+    .adidasReviews {
+        display: block;
+        text-align: center;
+        padding: 10px;
+
+    }
+    #buttonSFeedbackOrange {
+        margin-top: 10px;
+    }
+    .adidasFlexMarginRight{
+        max-width: 100%;
+    }
+    .storesMyFeedbackMediaFlex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .adidasFlex{
+        flex-wrap: wrap;
+    }
+    .productMyFeedback{
+        max-width: 100%;
+    }
+    .greenAndGrayDivsMyFeedback {
+        margin-top: 10px;
+    }
+    .green1{
+        margin: 0;
+    }
+    .green2{
+        margin: 0;
+    }
+    .green3{
+        margin: 0;
+    }
+    .totalDivsAndColorsDivsFlex{
+        display: block;
+    }
+    .myFeedbackFlex{
+        flex-wrap: wrap;
+    }
+    .myFeedBackStoresFlex{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .myFeedBackStores{
+        margin: 15px 15px 0 0;
+
+    }
+}
+@media screen and (max-width: 1060px) {
+
+    .payoutDivs2 {
+        justify-content: center;
+    }
+    .title {
+        text-align: center;
+    }
+
+}
 @media screen and (max-width: 1054px) {
+    .adidasDiv{
+        margin: 20px;
+    }
+    .storesMyFeedbackMediaFlex{
+        display: flex;
+        justify-content: center;
+
+    }
+    .adidasReviewsMarginRightAndstoresMyFeedbackMediaFlex{
+        display: block;
+    }
     .menu .search_field {
         max-width: 40px;
     }
@@ -2207,15 +2851,27 @@ input:checked + .slider:before {
         font-size: 6px;
     }
 }
-@media screen and (max-width: 1060px) {
-    .payoutDivs2 {
-        justify-content: center;
-    }
-    .title {
-        text-align: center;
-    }
-}
 @media screen and (min-width: 769px) and (max-width: 965px) {
+    .myFeedbackYesOrNo{
+        margin: 10px;
+    }
+    .wouldYouFlex{
+        display: block;
+    }
+    .likeDislikeFlex{
+        display: block;
+    }
+    .datasFlex{
+        display: block;
+    }
+    #buttonSFeedbackOrange{
+        margin-top: 10px;
+    }
+    .adidasReviews{
+        display: block;
+        text-align: center;
+        padding: 10px ;
+    }
     .changePasswordDiv{
         padding: 30px 35px;
     }
@@ -2286,6 +2942,40 @@ input:checked + .slider:before {
     }
 }
 @media screen and (max-width: 768px) {
+    .myFeedbackFlexPadding{
+        padding: 0;
+    }
+    /* .myFeedbackYesOrNo{
+        margin: 10px;
+    }
+    .wouldYouFlex{
+        display: block;
+    } */
+    .categoriesPadding{
+        padding: 20px;
+    }
+    .adidasUserNameMainPageTitle{
+        padding: 20px 0 0 20px;
+    }
+    .mainPaddingMyFeedback{
+        width: 100%;
+    }
+    .adidasReviews{
+        justify-content: space-around;
+    }
+    .main{
+        padding: 0 20px;
+    }
+    .mainPaddingMyFeedback{
+        padding: 0;
+    }
+    .adidasReviewsMarginRight {
+        margin: 0;
+    }
+    .adidasFlexMarginRight{
+        margin: 0;
+    }
+
     .changePasswordDiv{
         padding: 30px 35px;
     }
@@ -2308,9 +2998,17 @@ input:checked + .slider:before {
     .home {
         display: none;
     }
+    #home {
+        /* display: none; */
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
 
     #home {
-        display: none;
+        /* display: none; */
     }
     .vector {
         display: none;
@@ -2440,6 +3138,10 @@ input:checked + .slider:before {
         width: 100%;
         justify-content: center;
     }
+    .faqPaddingPage{
+        width: 100%;
+        justify-content: center;
+    }
     .mainPrivacyPolicy{
         padding: 0;
     }
@@ -2454,6 +3156,12 @@ input:checked + .slider:before {
     }
 }
 @media screen and (max-width: 630px) {
+    .myFeedbackYesOrNo{
+        margin: 10px;
+    }
+    .wouldYouFlex{
+        display: block
+    }
     .card {
         padding: 25px;
         display: block;
@@ -2470,6 +3178,27 @@ input:checked + .slider:before {
     }
     .amsativ {
         margin-bottom: 20px;
+    }
+    .datasFlex{
+        display: block;
+    }
+}
+@media screen and (max-width: 505px){
+    #buttonSFeedbackOrange{
+        margin-top: 10px;
+    }
+    .adidasReviews{
+        display: block;
+        text-align: center;
+        padding: 10px ;
+    }
+    .likeDislikeFlex{
+        display: block;
+
+    }
+    .likeDislikeMediaFlex{
+        display: flex;
+        align-items: center;
     }
 }
 @media screen and (max-width: 452px) {

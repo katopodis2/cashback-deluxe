@@ -21,14 +21,12 @@
     {{--    </div>--}}
     {{--</div>--}}
     <div  class="homeflex">
-    @if(
-
-    auth()->user())
+    @if(auth()->user())
         @include("partials.left-menu")
     @endif
     <div class="homeRightWidth" id="homeRightWidth">
         <div class="popular_items inner-wrap">
-            <div class="bolded_text">Popular stores</div>
+            <div class="bolded_text">{{__("global.popularStores")}}</div>
             <div class="list_of_popular">
                 <div>
                     <div class="list-logo">
@@ -70,45 +68,45 @@
         {{-- end   include button section and how does work section     --}}
 
         <div class="store_items inner-wrap">
-            <div class="bolded_text">Store Categories</div>
+            <div class="bolded_text">{{__("global.storeCategories")}}</div>
             <div class="list_of_categories">
                 <div>
-                    <p><strong>Fashion and style</strong></p>
+                    <p><strong>{{__("global.fashionAndStyle")}}</strong></p>
                     <p>Stores: 258</p>
                     <div class="list-logo">
                         <img src={{asset('images/row-of-oxford-shirts.png')}} alt="">
                     </div>
                 </div>
                 <div>
-                    <p><strong>Electronics</strong></p>
+                    <p><strong>{{__("global.electronics")}}</strong></p>
                     <p>Stores: 258</p>
                     <div class="list-logo">
                         <img src={{asset('images/Electronics.png')}} alt="">
                     </div>
                 </div>
                 <div>
-                    <p><strong>Travel and tourism</strong></p>
+                    <p><strong>{{__("global.travelAndTourism")}}</strong></p>
                     <p>Stores: 258</p>
                     <div class="list-logo">
                         <img src={{asset('images/Travel-Tourism2.png')}} alt="">
                     </div>
                 </div>
                 <div>
-                    <p><strong>Beauty and health</strong></p>
+                    <p><strong>{{__("global.beautyAndHealth")}}</strong></p>
                     <p>Stores: 258</p>
                     <div class="list-logo">
                         <img src={{asset('images/make_up.png')}} alt="">
                     </div>
                 </div>
                 <div>
-                    <p><strong>For home</strong></p>
+                    <p><strong>{{__("global.forHome")}}</strong></p>
                     <p>Stores: 258</p>
                     <div class="list-logo">
                         <img src={{asset('images/home_image2.png')}} alt="">
                     </div>
                 </div>
                 <div>
-                    <p><strong>For kids</strong></p>
+                    <p><strong>{{__("global.forKids")}}</strong></p>
                     <p>Stores: 258</p>
                     <div class="list-logo">
                         <img src={{asset('images/toys.png')}} alt="">
@@ -137,7 +135,7 @@
                             <p>Black Friday Dials: Geen aansluiten t.w.v.</p>
                             <p>&euro;20 en tot 2.000 MB graits</p>
                         </div>
-                        <button>VIEW ACTION</button>
+                        <button>{{__("global.viewAction")}}</button>
                     </div>
                 @endfor
 {{--                <div>--}}
@@ -247,7 +245,7 @@
         @endif
         {{-- end   include advantages section, save more with chashbackdeluxe     --}}
         <div class="blog inner-wrap">
-            <div class="bolded_text">Blog</div>
+            <div class="bolded_text">{{__("global.blog")}}</div>
             <div class="list_of_blogs">
                 <div>
                     <div class="list-logo" style="background-image:url({{asset('images/Blog_cover_1.png')}})">
@@ -260,7 +258,7 @@
                         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
                         nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                         mollit anim id est laborum.</p>
-                    <p class="read">Read more >></p>
+                    <p class="read">{{__("global.readMore")}} >></p>
                 </div>
                 <div>
                     <div class="list-logo" style="background-image:url({{asset('images/Blog_cover_2.png')}})">
@@ -273,7 +271,7 @@
                         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
                         nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                         mollit anim id est laborum.</p>
-                    <p class="read">Read more >></p>
+                    <p class="read">{{__("global.readMore")}} >></p>
                 </div>
                 <div>
                     <div class="list-logo" style="background-image:url({{asset('images/Blog_cover_3.png')}})">
@@ -286,7 +284,7 @@
                         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
                         nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                         mollit anim id est laborum.</p>
-                    <p class="read">Read more >></p>
+                    <p class="read">{{__("global.readMore")}} >></p>
                 </div>
                 <br clear="all">
             </div>

@@ -5,3 +5,4 @@
 <script type="text/javascript" src="{{asset('js/main.js')}}"></script>
 
 <script src="{{ asset('js/app.js') }}" defer></script>
+@stack('bottom_js')

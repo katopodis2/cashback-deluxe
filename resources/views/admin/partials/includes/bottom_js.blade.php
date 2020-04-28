@@ -3,6 +3,13 @@
 <script type="text/javascript" src="{{asset('js/bootstrap.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/select2.min.js')}}"></script>
 
+<script type="text/javascript" src="{{asset('js/fontawesome.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('js/a076d05399.js')}}"></script>
+
+<script type="text/javascript" src="{{asset('js/main.js')}}"></script>
+
+<script src="{{ asset('js/app.js') }}" defer></script>
+
 <!-- Main File-->
 <script type="text/javascript">
     $(window).ready(function() {
@@ -29,5 +36,8 @@
         }
         return false;
     });
+    //flash
+    $('div.alert').not('.alert-important').delay(3000).fadeOut(350);
 </script>
+
 @stack('bottom_js')

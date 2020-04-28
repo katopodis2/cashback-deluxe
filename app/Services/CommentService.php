@@ -6,7 +6,7 @@
  * Time: 12:35
  */
 
-namespace App\services;
+namespace App\Services;
 
 
 use App\models\StoreComment;

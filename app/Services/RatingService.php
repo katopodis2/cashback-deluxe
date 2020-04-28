@@ -6,7 +6,7 @@
  * Time: 13:19
  */
 
-namespace App\services;
+namespace App\Services;
 
 
 use App\models\AgainBuy;

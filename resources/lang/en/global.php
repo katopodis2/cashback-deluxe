@@ -70,4 +70,11 @@ return [
     'conditionsCashBackCrediting' => "Conditions of cash back crediting at ",
     'rateStore' => "Please rate the store from 1 to 5 stars, where 1 star is a bad store and 5 stars is a great store.",
     "are_you_sure" => "Are you sure to delete your account?",
+    "howWorkNotFound" => "How Does It Work Not Found",
+    "addHowWork" => "Add How Does It Work",
+    "how_work-create" => "Create How Does It Work",
+
+    "left"=>[
+        "how-work" => "How Work",
+    ]
 ];

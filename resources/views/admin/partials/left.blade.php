@@ -15,7 +15,7 @@
         <div class="main-menu">
             <h5 class="sidenav-heading">{{__("global.main")}}</h5>
             <ul id="side-main-menu" class="side-menu list-unstyled">
-{{--                <li><a href="{{route('admin.product.index')}}"> <i class="fa fa-product-hunt"></i>{{__('global.left.products')}}</a></li>--}}
+                <li><a href="{{route('admin.how-work.index')}}"> <i class="fa fa-product-hunt"></i>{{__('global.left.how-work')}}</a></li>
 
 {{--                <li><a href="{{route('admin.category.index')}}"><i class="fa fa-align-left"></i>{{__('global.left.categories')}}</a></li>--}}
 {{--                <li><a href="{{route('admin.user.index')}}"><i class="fa fa-users"></i>{{__('global.left.users')}}</a></li>--}}

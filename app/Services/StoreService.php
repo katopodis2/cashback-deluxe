@@ -6,7 +6,7 @@
  * Time: 11:51
  */
 
-namespace App\services;
+namespace App\Services;
 
 use App\models\Store;
 

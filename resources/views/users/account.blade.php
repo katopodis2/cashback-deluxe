@@ -110,7 +110,7 @@
                     <div class="row w-100">
                         <form action="">
                         <div class="text-center">
-                            <button type="submit" class="closeModal btn-default" >{{__("form.close")}}</button>
+                            <button type="submit"  class="closeModal btn-default" >{{__("form.close")}}</button>
                             <button type="submit" class="deleteAccountModal btn-danger">{{__("form.delete")}}</button>
                         </div>
                         </form>

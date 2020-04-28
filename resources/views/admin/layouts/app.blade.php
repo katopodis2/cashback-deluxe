@@ -16,10 +16,18 @@
 @include('admin.partials.left')
 <div class="page d-flex flex-column">
     @include('admin.partials.header')
-{{--    @include('flash::message')--}}
-    @yield('content')
+
+    <div class="container">
+        @include('flash::message')
+        <main class="w-100 py-5">
+            @yield('content')
+        </main>
+    </div>
     @if(request()->route()->getName() == 'admin.home')
-        <div class="backGround d-flex col justify-content-center align-items-center"> <img class="w-100" style="max-width: 400px;" src="{{asset('images/holland_windmill.jpg')}}"></div>
+        <div class="backGround d-flex col justify-content-center align-items-center"><img class="w-100"
+                                                                                          style="max-width: 400px;"
+                                                                                          src="{{asset('images/holland_windmill.jpg')}}">
+        </div>
     @endif
     @include('admin.partials.footer')
 </div>

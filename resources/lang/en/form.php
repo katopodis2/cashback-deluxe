@@ -21,6 +21,8 @@ return [
     'save' => "Save",
     'close' => "Close",
     'delete' => "Delete",
+    'description' => "Description",
+    'title' => "Title",
     'enterMessage' => "Enter Messages",
     'selectTopic' => "Select Topic",
     'yourEmail' => "Your Email",

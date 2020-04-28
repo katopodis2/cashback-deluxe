@@ -14,8 +14,20 @@ if (!empty($item)){
 
 <form action="{{route("admin.how-work.$route",$id??"")}}" method="POST" enctype="multipart/form-data">
     @csrf
-    <div><input type="text" name="title" value="{{old('title')??($title??'')}}"></div>
-    <div><textarea type="text" name="text" >{{old('text')??($text??'')}}</textarea></div>
+    <div>
+        <div><label for="title">{{__("form.title")}}</label></div>
+        <input type="text" id="title" name="title" value="{{old('title')??($title??'')}}">
+        @if($errors->has('title'))
+            <div class="error">{{ $errors->first('title') }}</div>
+        @endif
+    </div>
+    <div>
+        <div><label  for="desc">{{__("form.description")}}</label></div>
+        <textarea id="desc" type="text" name="text" >{{old('text')??($text??'')}}</textarea>
+        @if($errors->has('text'))
+            <div class="error">{{ $errors->first('text') }}</div>
+        @endif
+    </div>
 
     <picture>
         <div id="preview">
@@ -25,6 +37,11 @@ if (!empty($item)){
     <div><input type="file" name="img" onchange=previewFiles() ></div>
     <div><button type="submit" >submit</button></div>
 </form>
+<style>
+    .error{
+        color: red;
+    }
+</style>
 @push('bottom_js')
     <script>
 

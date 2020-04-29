@@ -18,6 +18,7 @@ class BaseService
      */
     protected $validationErrors;
 
+
     /**
      * @param $file
      * @param $path

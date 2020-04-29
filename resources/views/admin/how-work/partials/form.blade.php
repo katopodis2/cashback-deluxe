@@ -16,14 +16,14 @@ if (!empty($item)){
     @csrf
     <div>
         <div><label for="title">{{__("form.title")}}</label></div>
-        <input type="text" id="title" name="title" value="{{old('title')??($title??'')}}">
+        <input class="w-100" type="text" id="title" name="title" value="{{old('title')??($title??'')}}">
         @if($errors->has('title'))
             <div class="error">{{ $errors->first('title') }}</div>
         @endif
     </div>
     <div>
         <div><label  for="desc">{{__("form.description")}}</label></div>
-        <textarea id="desc" type="text" name="text" >{{old('text')??($text??'')}}</textarea>
+        <textarea class="w-100" style="height: 150px" id="desc" type="text" name="text" >{{old('text')??($text??'')}}</textarea>
         @if($errors->has('text'))
             <div class="error">{{ $errors->first('text') }}</div>
         @endif
@@ -34,7 +34,10 @@ if (!empty($item)){
             <img src="{{url('storage/images/howWork/'.$url)}}" alt="">
         </div>
     </picture>
-    <div><input type="file" name="img" onchange=previewFiles() ></div>
+    <div><input type="file" name="img"  onchange=previewFiles() ></div>
+    @if($errors->has('img'))
+        <div class="error">{{ $errors->first('img') }}</div>
+    @endif
     <div><button type="submit" >submit</button></div>
 </form>
 <style>

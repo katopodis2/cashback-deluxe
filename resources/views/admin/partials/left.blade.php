@@ -17,7 +17,7 @@
             <ul id="side-main-menu" class="side-menu list-unstyled">
                 <li><a href="{{route('admin.how-work.index')}}"> <i class="fa fa-product-hunt"></i>{{__('global.left.how-work')}}</a></li>
 
-{{--                <li><a href="{{route('admin.category.index')}}"><i class="fa fa-align-left"></i>{{__('global.left.categories')}}</a></li>--}}
+                <li><a href="{{route('admin.faq.index')}}"><i class="fa fa-align-left"></i>{{__('global.left.faq')}}</a></li>
 {{--                <li><a href="{{route('admin.user.index')}}"><i class="fa fa-users"></i>{{__('global.left.users')}}</a></li>--}}
 {{--                --}}{{--<li><a href="{{route('admin.city.index')}}"><i class="fa fa-building"></i>{{__('global.left.cities')}}</a></li>--}}
 {{--                <li><a href="{{route('admin.lara-articles.index')}}"><i class="fa fa-building"></i>{{__('global.left.articles')}}</a></li>--}}

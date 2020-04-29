@@ -43,7 +43,8 @@ class HowDoesItWorkService extends BaseService
         if (!empty($dataImage)) {
             $data['img'] = $dataImage['file_name'];
         }
-        HowDoesItWork::create($data);
+        return
+            HowDoesItWork::create($data);
 
     }
 
@@ -71,11 +72,6 @@ class HowDoesItWorkService extends BaseService
         if (is_null($item)) {
             return false;
         }
-
-        if (!$this->validate($this->baseValidator, $data)) {
-            return false;
-        }
-
         if (!empty($data["img"])) {
             $dataImage = $this->getDataImage($data);
 
@@ -83,6 +79,11 @@ class HowDoesItWorkService extends BaseService
                 $data['img'] = $dataImage['file_name'];
             }
         }
+        if (!$this->validate($this->baseValidator, $data, ['rule' => 'Update'])) {
+            return false;
+        }
+
+
         return $item->update($data);
     }
 

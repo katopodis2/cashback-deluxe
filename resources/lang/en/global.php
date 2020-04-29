@@ -71,10 +71,16 @@ return [
     'rateStore' => "Please rate the store from 1 to 5 stars, where 1 star is a bad store and 5 stars is a great store.",
     "are_you_sure" => "Are you sure to delete your account?",
     "howWorkNotFound" => "How Does It Work Not Found",
+    "faqNotFound" => "FAQ Not Found",
     "addHowWork" => "Add How Does It Work",
+    "addFaq" => "Add FAQ",
     "how_work-create" => "Create How Does It Work",
+    "how_work-update" => "Create How Does It Work",
+    "faq-update" => "Update FAQ ",
+    "faq-create" => "Create FAQ",
 
     "left"=>[
         "how-work" => "How Work",
+        "faq" => "FAQ",
     ]
 ];

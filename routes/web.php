@@ -49,13 +49,22 @@ Route::post("/faq", function (\Illuminate\Http\Request $request){
 
 Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'admin'], 'namespace' => 'Admin', 'as' => 'admin.'], function () {
     Route::get('/', 'HomeController@index')->name('home');
-
+//                start       how does it work
     Route::get('/how-work', 'HowDoesItWorkController@index')->name('how-work.index');
     Route::get('/add-how-work', 'HowDoesItWorkController@create')->name('how-work.create');
     Route::post('/add-how-work', 'HowDoesItWorkController@store')->name('how-work.store');
     Route::get('/how-work/{id}/edit', 'HowDoesItWorkController@edit')->name('how-work.edit');
     Route::post('/how-work/{id}', 'HowDoesItWorkController@update')->name('how-work.update');
     Route::delete('/how-work/delete/{id}', 'HowDoesItWorkController@delete')->name('how-work.delete');
+    //                end       how does it work
 
+    //                start       faq
+    Route::get('/faq', 'FaqController@index')->name('faq.index');
+    Route::get('/add-faq', 'FaqController@create')->name('faq.create');
+    Route::post('/add-faq', 'FaqController@store')->name('faq.store');
+    Route::get('/faq/{id}/edit', 'FaqController@edit')->name('faq.edit');
+    Route::post('/faq/{id}', 'FaqController@update')->name('faq.update');
+    Route::delete('/faq/delete/{id}', 'FaqController@delete')->name('faq.delete');
+//                          end faq
 });
 

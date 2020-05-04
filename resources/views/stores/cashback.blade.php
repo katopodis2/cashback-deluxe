@@ -1,10 +1,10 @@
 <div class="adidasReviewsMarginRight">
     <div class="adidasReviews">
         <div>
-            <a href="{{route("store.store")}}">
+            <a href="{{route("store.shop", $slug)}}">
                 <button class="buttonSFeedback" id="buttonSFeedbackGrey">{{__("global.cashBack")}}</button>
             </a>
-            <a href="{{route("store.review")}}">
+            <a href="{{route("store.review", $slug)}}">
                 <button class="buttonSFeedback"
                         id="buttonSFeedbackYellow">{{__("global.reviews")}}</button>
             </a>

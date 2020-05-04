@@ -20,6 +20,13 @@ body {
     font-family: "Times New Roman", "Regular";
     font-weight: 300;
 }
+
+span .review_star_full1 {
+    background-image: url("../images/Star_full.svg");
+}
+span .review_star_empty1 {
+    background-image: url("../images/Star_empty.svg");
+}
 #usersDiv{
     margin-top: 25px;
     width: 0;
@@ -3373,4 +3380,8 @@ input:checked + .slider:before {
     .bringFriendUrl {
         width: 100%;
     }
+
+
 }
+
+

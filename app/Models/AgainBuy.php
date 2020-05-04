@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class AgainBuy extends Model
 {
     protected $fillable = [
-        'user_id','store_id', 'yes','no'
+        'user_id','store_id', 'is_buy_again'
     ];
 }

@@ -31,12 +31,17 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/user/settings', 'UsersController@settingsAccount')->name('user.account');
     Route::get('/change-password', 'UsersController@changePassword')->name('user.changePass');
 
+                                        //review
+    Route::get('/shop/{slug}', 'StoresController@shop')->name('store.shop');//TODO name sarqel partadir, uxaki testi hamar em pakel
+    Route::get('/review/add/{slug}', 'ReviewController@addReview')->name('store.addReview');//TODO name sarqel partadir, uxaki testi hamar em pakel
+    Route::post('/review/add/{slug}', 'ReviewController@storeReview')->name('store.storeReview');//TODO name sarqel partadir, uxaki testi hamar em pakel
+    Route::get('/review/edit/{slug}', 'ReviewController@editReview')->name('store.editReview');//TODO name sarqel partadir, uxaki testi hamar em pakel
+    Route::post('/review/edit/{slug}', 'ReviewController@updateReview')->name('store.updateReview');//TODO name sarqel partadir, uxaki testi hamar em pakel
+    Route::get('/reviews/{slug}', 'ReviewController@review')->name('store.review');//TODO name sarqel partadir, uxaki testi hamar em pakel
+    Route::get('/my-reviews/{slug}', 'ReviewController@myReview')->name('store.myReview');//TODO name sarqel partadir, uxaki testi hamar em pakel
 });
 
-Route::get('/store/{name?}', 'StoresController@store')->name('store.store');//TODO name sarqel partadir, uxaki testi hamar em pakel
-Route::get('/review/add/{name?}', 'StoresController@addReview')->name('store.addReview');//TODO name sarqel partadir, uxaki testi hamar em pakel
-Route::post('/review/add/{name?}', 'StoresController@storeReview')->name('store.storeReview');//TODO name sarqel partadir, uxaki testi hamar em pakel
-Route::get('/reviews/{name?}', 'StoresController@review')->name('store.review');//TODO name sarqel partadir, uxaki testi hamar em pakel
+
 
 Route::view('privacy', 'privacy')->name("privacy");
 

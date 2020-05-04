@@ -4,19 +4,23 @@
 namespace App\Http\Controllers;
 
 
+use App\Services\RatingService;
 use App\Services\StoreService;
 use Illuminate\Http\Request;
 
 class StoresController extends BaseController
 {
 
+    protected $ratingsService;
+
     /**
      * StoresController constructor.
      * @param StoreService $storeService
      */
-    public function __construct(StoreService $storeService)
+    public function __construct(StoreService $storeService, RatingService $ratingService)
     {
         $this->baseService = $storeService;
+        $this->ratingsService = $ratingService;
 
     }
 
@@ -26,30 +30,40 @@ class StoresController extends BaseController
 
     }
 
-    public function store()
+    public function shop($slug)
     {
-//        return view("stores.cashback");
-        return view("stores.storePage");
+        $store = $this->baseService->isStoreBySlug($slug);
+        if (!$store){
+            return redirect()->route('home');
+        }
+        $thisStoreRating = $this->ratingsService->getStoreRating($store->id);
+        $is_review = $this->isRev($store);
+
+        return view("stores.storePage", compact('slug', 'is_review', 'thisStoreRating'));
     }
 
-    public function review()
-    {
-        return view("stores.storePage");
-    }
 
-    public function addReview()
-    {
-        return view("stores.addReview");
-    }
 
-    public function storeReview(Request $request)
-    {
-        dd($request->all());
-    }
-
+    /**
+     * @param Request $request
+     */
     public function storeCat(Request $request)
     {
         $this->baseService->storeCategory($request->id);
 
+    }
+
+    /**
+     * @param $store
+     * @return bool
+     */
+    public function isRev($store)
+    {
+        $is_review = false;
+        if ($this->baseService->isReview($store)){
+            $is_review = true;
+        }
+
+        return $is_review;
     }
 }

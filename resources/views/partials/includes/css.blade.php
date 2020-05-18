@@ -1,4 +1,3 @@
-<link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}" />
 <link rel="stylesheet" type="text/css" href="{{asset('css/rubik.css')}}" />
 <link rel="stylesheet" type="text/css" href="{{asset('css/fontawesome.min.css')}}" />
 <link rel="stylesheet" type="text/css" href="{{asset('css/font-awesome.min.css')}}" />
@@ -18,6 +17,7 @@
 <link rel="stylesheet" type="text/css" href="{{asset('css//css/v4-shims.min.css')}}" />
 
 {{--css star end--}}
+<link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}" />
 
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 {{--@stack('push_css')--}}

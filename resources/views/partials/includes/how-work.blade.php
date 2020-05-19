@@ -31,7 +31,7 @@
                 <div class="list-logo">
                     <img src={{url('storage/images/howWork/'.$item->img)}} alt="">
                 </div>
-                <p>{$item->title}}</p>
+                <p>{{$item->title}}</p>
                 <p>{{$item->text}}</p>
                 <div class="arrow"></div>
             </div>

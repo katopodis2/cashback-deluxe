@@ -19,5 +19,5 @@
 {{--css star end--}}
 <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}" />
 
-<link href="{{ asset('css/app.css') }}" rel="stylesheet">
+{{--<link href="{{ asset('css/app.css') }}" rel="stylesheet">--}}
 {{--@stack('push_css')--}}

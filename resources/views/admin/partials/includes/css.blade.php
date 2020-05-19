@@ -3,7 +3,7 @@
 <!-- Font Awesome CSS-->
 <link rel="stylesheet" href="{{asset('vendor/font-awesome/css/font-awesome.min.css')}}">
 <!-- Fontastic Custom icon font-->
-<link rel="stylesheet" href="{{asset('css/fontastic.css')}}">
+<link rel="stylesheet" href="{{asset('css/css/fontastic.css')}}">
 <!-- Google fonts - Roboto -->
 <link rel="stylesheet" href="{{asset('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700')}}">
 <!-- Custom Scrollbar-->
@@ -13,15 +13,14 @@
 <!-- Custom stylesheet - for your changes-->
 <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
 <!-- Favicon-->
-<link rel="shortcut icon" href="{{asset('img/favicon.ico')}}">
+{{--<link rel="shortcut icon" href="{{asset('img/favicon.ico')}}">--}}
 
-<link rel="stylesheet" type="text/css" href="{{asset('css/select2.min.css')}}" />
+<link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}" />
+{{--<link rel="stylesheet" type="text/css" href="{{asset('css/select2.min.css')}}" />--}}
 
-<link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}" />
 <link rel="stylesheet" type="text/css" href="{{asset('css/rubik.css')}}" />
 <link rel="stylesheet" type="text/css" href="{{asset('css/fontawesome.min.css')}}" />
 <link rel="stylesheet" type="text/css" href="{{asset('css/font-awesome.min.css')}}" />
-<link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}" />
 {{--css star--}}
 <link rel="stylesheet" type="text/css" href="{{asset('css//css/all.css')}}" />
 <link rel="stylesheet" type="text/css" href="{{asset('css//css/all.min.css')}}" />
@@ -36,4 +35,5 @@
 <link rel="stylesheet" type="text/css" href="{{asset('css//css/v4-shims.css')}}" />
 <link rel="stylesheet" type="text/css" href="{{asset('css//css/v4-shims.min.css')}}" />
 
+<link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}" />
 @stack('push_css')

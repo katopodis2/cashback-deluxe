@@ -879,7 +879,7 @@ header {
     top: 0%;
     left: 0%;
     width: 100%;
-    background-image: url("./assets/top_image.png");
+    background-image: url("../images/top_image.png");
     background-repeat: no-repeat;
 }
 .heading {

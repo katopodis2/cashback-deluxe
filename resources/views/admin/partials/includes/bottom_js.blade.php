@@ -1,4 +1,3 @@
-<script type="text/javascript" src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/popper.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/bootstrap.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/select2.min.js')}}"></script>

@@ -48,47 +48,47 @@
                         </div>
                     </form>
 
-                    <div class="socialNetwork">{{__("form.socialNetworks")}}</div>
-                    <div>
-                        <div class="socialNetworkMainLines">
-                            <div class="socialNetworkLine">
-                                <img class="socialNetworkImg" src="./images/linkedinColor.png"/>
-                                <div>Linkedin</div>
-                            </div>
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider round"></span>
-                            </label>
-                        </div>
-                        <hr>
+{{--                    <div class="socialNetwork">{{__("form.socialNetworks")}}</div>--}}
+{{--                    <div>--}}
+{{--                        <div class="socialNetworkMainLines">--}}
+{{--                            <div class="socialNetworkLine">--}}
+{{--                                <img class="socialNetworkImg" src="./images/linkedinColor.png"/>--}}
+{{--                                <div>Linkedin</div>--}}
+{{--                            </div>--}}
+{{--                            <label class="switch">--}}
+{{--                                <input type="checkbox">--}}
+{{--                                <span class="slider round"></span>--}}
+{{--                            </label>--}}
+{{--                        </div>--}}
+{{--                        <hr>--}}
 
-                        <div class="socialNetworkMainLines">
-                            <div class="socialNetworkLine">
-                                <img class="socialNetworkImg" src="./images/twitterColor.png"/>
-                                <div>Twitter</div>
-                            </div>
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider round"></span>
-                            </label>
-                        </div>
-                        <hr>
+{{--                        <div class="socialNetworkMainLines">--}}
+{{--                            <div class="socialNetworkLine">--}}
+{{--                                <img class="socialNetworkImg" src="./images/twitterColor.png"/>--}}
+{{--                                <div>Twitter</div>--}}
+{{--                            </div>--}}
+{{--                            <label class="switch">--}}
+{{--                                <input type="checkbox">--}}
+{{--                                <span class="slider round"></span>--}}
+{{--                            </label>--}}
+{{--                        </div>--}}
+{{--                        <hr>--}}
 
-                        <div class="socialNetworkMainLines">
-                            <div class="socialNetworkLine">
-                                <img class="socialNetworkImg" src="./images/facebookColor.png"/>
-                                <div>Facebook</div>
-                            </div>
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider round"></span>
-                            </label>
-                        </div>
-                        <hr>
-                        <div  class="mysettingDownFlex">
-                            <button data-toggle="modal" data-target="#myModal{{auth()->user()->id}}" class="delteProfileDiv m-0 float-right btn-product-delete">Delete profile</button>
-                        </div>
-                    </div>
+{{--                        <div class="socialNetworkMainLines">--}}
+{{--                            <div class="socialNetworkLine">--}}
+{{--                                <img class="socialNetworkImg" src="./images/facebookColor.png"/>--}}
+{{--                                <div>Facebook</div>--}}
+{{--                            </div>--}}
+{{--                            <label class="switch">--}}
+{{--                                <input type="checkbox">--}}
+{{--                                <span class="slider round"></span>--}}
+{{--                            </label>--}}
+{{--                        </div>--}}
+{{--                        <hr>--}}
+{{--                        <div  class="mysettingDownFlex">--}}
+{{--                            <button data-toggle="modal" data-target="#myModal{{auth()->user()->id}}" class="delteProfileDiv m-0 float-right btn-product-delete">Delete profile</button>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
                 </div>
             </div>
         </div>

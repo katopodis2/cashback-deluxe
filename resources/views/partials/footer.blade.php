@@ -8,20 +8,21 @@
             </div>
         </div>
         <div>
-            <div>{{__("global.links")}}</div>
-            <div ><a href="{{route('home')}}">{{__("global.home")}}</a></div>
-            <div><a href="{{route('login')}}">{{__("global.sign_in")}}</a></div>
-            <div><a href="{{route("register")}}">{{__("global.register")}}</a></div>
+            <div><a href="{{route('home')}}">{{__("global.home")}}</a></div>
+            @if(!auth()->user())
+                <div><a href="{{route('login')}}">{{__("global.sign_in")}}</a></div>
+                <div><a href="{{route("register")}}">{{__("global.register")}}</a></div>
+            @endif
         </div>
         <div>
             <div id="footer_title">{{__("global.aff_network")}}</div>
-            <div ><a href="https://www.daisycon.com/"  target="_blank">Daisycon</a></div>
+            <div><a href="https://www.daisycon.com/" target="_blank">Daisycon</a></div>
         </div>
         <div>
-            <div ><a href="{{route("faq")}}" style="color: white; text-decoration: none;">{{__("global.faq")}}</a></div>
-            <div>{{__("global.support")}}</div>
-            <div><a href="{{route("privacy")}}" >{{__("global.terms")}}</a></div>
-            <div >  <a href="revew.html">{{__("global.review")}}</a></div>
+            <div><a href="{{route("faq")}}" style="color: white; text-decoration: none;">{{__("global.faq")}}</a></div>
+            <div><a href="{{url(route("faq") . '#FaqTitle')}}">{{__("global.support")}}</a></div>
+            <div><a href="{{route("privacy")}}">{{__("global.terms")}}</a></div>
+            <div><a href="{{route('cashBackReview')}}">{{__("global.review")}}</a></div>
         </div>
         <div>
             <div id="footer_title">{{__("global.contact")}}</div>

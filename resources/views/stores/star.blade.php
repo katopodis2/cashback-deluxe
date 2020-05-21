@@ -1,5 +1,5 @@
 @for($i = 1; $i <= 5; $i++)
-    @if($i < $overall)
+    @if($i <= $overall)
 
         <div class="star-container"
              style="position: relative; display: inline-block; vertical-align: middle; padding-left: 1px; padding-right: 1px;">
@@ -30,7 +30,7 @@
                       style="fill: /*rgb(252,221,120)*/ url(#half_grad); transition: fill 0.2s ease-in-out 0s;"></path>
             </svg>
         </div>
-    @elseif($i >= $overall)
+    @elseif($i > $overall)
         <div class="star-container"
         style="position: relative; display: inline-block; vertical-align: middle; padding-left: 1px; padding-right: 1px;">
         <svg viewBox="0 0 15 14" class="widget-svg"

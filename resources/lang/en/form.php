@@ -4,6 +4,7 @@ return [
     'login' => "LOG IN",
     'register' => "SIGN UP",
     'cancel' => "Cancel",
+    'send' => "Send",
     'sendFeedback' => "Send Feedback",
     'yes' => "YES",
     'no' => "NO",

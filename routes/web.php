@@ -22,6 +22,8 @@ Route::get('/login', 'AuthController@login')->name('login');
 Route::post('/login', 'AuthController@signIn')->name('signIn');
 Route::get('/test', 'AuthController@test')->name('test');
 Route::post('/logout', 'AuthController@logout')->name('logout');
+Route::get('/cash-back-review', 'HomeController@cashBackReview')->name('cashBackReview');
+Route::post('/cash-back-review', 'HomeController@storeCashBackReview')->name('addCashBackReview');
 
 Route::group(['middleware' => ['auth']], function () {
     Route::get('/my-wallet', 'MyCashBackController@myWallet')->name('myCashBack.myWallet');

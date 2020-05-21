@@ -817,7 +817,7 @@ span .review_star_empty1 {
     margin-bottom: 40px;
     cursor: pointer;
 }
- #emailPassword, #email, #name, #surname, #password-confirm{
+#emailPassword, #email, #name, #surname, #password-confirm{
     border-color: #ff7200;
     padding: 0 30px;
     font-style: italic;
@@ -1443,8 +1443,17 @@ header {
     position: absolute;
     margin-top: 18px;
 }
+.addRev {
+    color: #ffffff;
+    font-family: Rubik;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 51px;
+    position: absolute;
+}
 
-.card {
+.cardReview {
     max-width: 1194px;
     min-height: 300px;
     box-shadow: 0 11px 21px rgba(0, 0, 0, 0.05);
@@ -1457,9 +1466,10 @@ header {
     margin-bottom: 10px;
 }
 
-#cardLast {
+/* #cardLast {
     margin-bottom: 80px;
-}
+} */
+
 #cardMargin {
     margin-bottom: 10px;
 }
@@ -1477,6 +1487,64 @@ header {
     padding: 0 46px 0 0;
     border-right: 1px solid #ccc;
     text-align: center;
+}
+.revewPageComment{
+    max-width: 1194px;
+    min-height: 300px;
+    box-shadow: 0 11px 21px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin: 30px auto;
+    position: relative;
+    padding: 50px;
+
+}
+.revewMainDiv{
+    width: calc(100% - 344px);
+}
+
+.revuwPageCommentInput{
+    max-width: 1110px;
+    min-height: 150px;
+    width: 100%;
+}
+.revewPageCommentButtonS{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+}
+.revewPageButton{
+    width: 205px;
+    height: 60px;
+    box-shadow: 0 11px 21px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    background-color: #ff7200;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #ff7200;
+    color: #ffffff;
+    font-family: Rubik;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.revewPageCommentOverallAssessment{
+    margin-right: 50px;
+    font-size: 16px;
+}
+.revewPageCommentDiv{
+    font-weight: 700;
+    margin: 30px 0 15px 0;
+
+}
+.revewPageCommentFlex{
+    display: flex;
+}
+#revewPageButtonCancel{
+    background-color: #e8e8e8;
+    color: #787878;
+    border: 1px solid #e8e8e8;
+    margin-right: 15px;
 }
 .p {
     flex: 1;
@@ -2488,7 +2556,12 @@ input:checked + .slider:before {
 .percentReviewsBoldMarginBottom{
     margin-bottom: 10px;
 }
-
+.section3{
+    padding: 0 20px;
+}
+.revewPageCardSPadding{
+    padding: 0 20px;
+}
 /* .rating-box{
     display: flex;
     flex-direction: column;
@@ -2899,8 +2972,19 @@ input:checked + .slider:before {
         font-size: 14px;
     }
 }
-@media screen and (max-width: 992px) and (min-width: 600px) {
-
+@media screen and (max-width: 1000px) and (min-width: 600px) {
+    #cashback{
+        font-size: 30px;
+    }
+    #about{
+        font-size: 30px;
+    }
+    .ourService > div{
+        display: block;
+    }
+    .serviceDivs{
+        width: 100%;
+    }
     .leaves {
         padding: 12px 18px;
     }
@@ -2928,6 +3012,26 @@ input:checked + .slider:before {
     .cashS {
         padding: 0 5px;
     }
+    .cardReview {
+        padding: 25px;
+        display: block;
+    }
+    .amsativ {
+        margin-bottom: 20px;
+    }
+    .soc {
+        justify-content: center;
+    }
+    .starRow {
+        padding: 0 25px;
+    }
+    .revuewUserAndText {
+        padding: 0;
+        border-right: none;
+    }
+    .datasFlex{
+        display: block;
+    }
 }
 @media screen and (max-width: 851px) {
 
@@ -2949,6 +3053,23 @@ input:checked + .slider:before {
     }
 }
 @media screen and (max-width: 768px) {
+    .revewMainDiv{
+        width: 100%;
+    }
+    .ourService > div{
+        display: block;
+    }
+
+    #cashback{
+        font-size: 30px;
+    }
+    #about{
+        font-size: 30px;
+    }
+    .servises{
+        width: 90%;
+        margin: 5px;
+    }
     .myFeedbackFlexPadding{
         padding: 0;
     }
@@ -3139,7 +3260,8 @@ input:checked + .slider:before {
         padding: 15px 45px;
     }
     .serviceDivs {
-        width: 50% !important;
+        /* width: 50% !important; */
+        width: 100%;
     }
     .faqPadding {
         width: 100%;
@@ -3169,7 +3291,7 @@ input:checked + .slider:before {
     .wouldYouFlex{
         display: block
     }
-    .card {
+    .cardReview {
         padding: 25px;
         display: block;
     }

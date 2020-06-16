@@ -93,16 +93,17 @@
                 @foreach($reviews as $review)
                     <div>
                         <div class="cardReview" id="cardMargin">
-                            <div class="revuewUserAndText">
-                                <div class="marginItems"><img src="{{asset('images/reviewUser.png')}}"></div>
-                                <div class="marginItems" id="userName">{{$review->user->name}}</div>
+{{--                            <div class="revuewUserAndText">--}}
+{{--                                <div class="marginItems"><img src="{{asset('images/reviewUser.png')}}"></div>--}}
+
 {{--                                <div class="soc">--}}
 {{--                                    <div class="space"><img src="{{asset('images/twitter.png')}}"/></div>--}}
 {{--                                    <div class="space"><img src="{{asset('images/facebook.png')}}"/></div>--}}
 {{--                                    <div class="space"><img src="{{asset('images/instagram.png')}}"/></div>--}}
 {{--                                </div>--}}
-                            </div>
+{{--                            </div>--}}
                             <div class="p">
+                                <div class="marginItems" id="userName">{{$review->user->name}}</div>
                                 <div class="amsativ">{{$review->created_at}}</div>
                                 <div>
                                     {{$review->comment}}

@@ -18,7 +18,7 @@ class HomeController extends BaseController
     public function __construct(cashBackReviewService $cashReviewService)
     {
         $this->cashBackReviewService = $cashReviewService;
-        $this->middleware('auth');
+//        $this->middleware('auth');
     }
 
     /**

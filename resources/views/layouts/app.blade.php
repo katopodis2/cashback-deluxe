@@ -90,7 +90,10 @@
 <div class="w-100">
     <!-- Sidebar Holder -->
     @php
-        $backgr = "background-image:url(".asset('/images/holland_windmill.jpg').")";
+        $backgr = "background-image:url(".asset('/images/holland_windmill.jpg').");
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;";
     @endphp
     @if(request()->route()->getName() != "login" && request()->route()->getName() != "register")
         @include('partials.header')
